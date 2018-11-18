@@ -24,7 +24,10 @@ namespace NaughtyAttributes.Editor
             else
             {
                 string warning = onValueChangedAttribute.GetType().Name + " can invoke only action methods - with void return type and no parameters";
+
+#if ALLOW_EDITOR_LOGGING
                 Debug.LogWarning(warning, target);
+#endif
             }
         }
     }

@@ -124,7 +124,9 @@ namespace NaughtyAttributes.Editor
         private void DrawWarningBox(string message)
         {
             EditorGUILayout.HelpBox(message, MessageType.Warning);
+#if ALLOW_EDITOR_LOGGING
             Debug.LogWarning(message);
+#endif
         }
     }
 }

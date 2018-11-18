@@ -28,6 +28,7 @@ namespace NaughtyAttributes.Editor
         {
             EditorGUILayout.HelpBox(message, type);
 
+#if ALLOW_EDITOR_LOGGING
             if (logToConsole)
             {
                 switch (type)
@@ -44,6 +45,7 @@ namespace NaughtyAttributes.Editor
                         break;
                 }
             }
+#endif
         }
 
         public static void DrawPropertyField(SerializedProperty property, bool includeChildren = true)
