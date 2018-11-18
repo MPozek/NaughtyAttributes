@@ -1,3 +1,9 @@
+### About the fork
+This is a fork of the NaughtyAttributes repository. All code in this repository, including all branches, was written by dbrizov, this fork is used for:
+
+	a) perserving and controling the version of the repo used for my projects
+	b) making a branch (submodule-variant) for a variant (file reorganization) that can be easily submoduled in other repo-s (mainly Unity-Framework)
+
 # NaughtyAttributes
 NaughtyAttributes is an extension for the Unity Inspector.
 
